@@ -14,6 +14,7 @@
 		3145318C2000120800472798 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3145318A2000120800472798 /* LaunchScreen.storyboard */; };
 		314531972000120900472798 /* dev_profileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314531962000120900472798 /* dev_profileTests.swift */; };
 		314531A22000120900472798 /* dev_profileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314531A12000120900472798 /* dev_profileUITests.swift */; };
+		314531B12000160300472798 /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314531B02000160300472798 /* RoundedCorners.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		3145319D2000120900472798 /* dev-profileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dev-profileUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		314531A12000120900472798 /* dev_profileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dev_profileUITests.swift; sourceTree = "<group>"; };
 		314531A32000120900472798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		314531B02000160300472798 /* RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		314531802000120800472798 /* dev-profile */ = {
 			isa = PBXGroup;
 			children = (
+				314531AF200015E400472798 /* Extension */,
 				314531812000120800472798 /* AppDelegate.swift */,
 				314531832000120800472798 /* ViewController.swift */,
 				314531852000120800472798 /* Main.storyboard */,
@@ -123,6 +126,14 @@
 				314531A32000120900472798 /* Info.plist */,
 			);
 			path = "dev-profileUITests";
+			sourceTree = "<group>";
+		};
+		314531AF200015E400472798 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				314531B02000160300472798 /* RoundedCorners.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				314531842000120800472798 /* ViewController.swift in Sources */,
+				314531B12000160300472798 /* RoundedCorners.swift in Sources */,
 				314531822000120800472798 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
