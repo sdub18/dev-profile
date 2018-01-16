@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -13,6 +13,7 @@
     <customFonts key="customFonts">
         <array key="AvenirNext.ttc">
             <string>AvenirNext-Medium</string>
+            <string>AvenirNext-Regular</string>
         </array>
     </customFonts>
     <scenes>
@@ -21,37 +22,41 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="dev_profile" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Devslopes BG - June 2017-1920x1080" translatesAutoresizingMaskIntoConstraints="NO" id="yxM-TJ-Gax">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="njx-bQ-X0F"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Devslopes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTn-Oj-gs7">
-                                <rect key="frame" x="134" y="162" width="91.5" height="26"/>
+                                <rect key="frame" x="134" y="162" width="91.333333333333314" height="26"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="28"/>
+                                </variation>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zL9-Oo-fJu">
-                                <rect key="frame" x="80.5" y="254" width="214" height="57"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="zL9-Oo-fJu">
+                                <rect key="frame" x="8" y="254" width="398" height="57"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xwp-4L-CcJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="58" height="57"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="129.33333333333334" height="57"/>
                                         <state key="normal" image="cameraButton"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlm-Ov-C0A">
-                                        <rect key="frame" x="78" y="0.0" width="58" height="57"/>
+                                        <rect key="frame" x="134.33333333333331" y="0.0" width="129.33333333333331" height="57"/>
                                         <state key="normal" image="inboxButton"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZgE-nL-1is">
-                                        <rect key="frame" x="156" y="0.0" width="58" height="57"/>
+                                        <rect key="frame" x="268.66666666666669" y="0.0" width="129.33333333333331" height="57"/>
                                         <state key="normal" image="favoriteButton"/>
                                     </button>
                                 </subviews>
+                                <variation key="heightClass=regular-widthClass=compact" baselineRelativeArrangement="NO" spacing="5"/>
                             </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="devslopesProfileLogo" translatesAutoresizingMaskIntoConstraints="NO" id="NLx-5n-mDS">
                                 <rect key="frame" x="16" y="120" width="110" height="110"/>
@@ -61,46 +66,77 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="bhb-s2-pDL">
-                                <rect key="frame" x="24" y="331" width="327" height="156"/>
+                                <rect key="frame" x="24" y="331" width="366" height="175.66666666666663"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Data Image" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ES8-4e-66f">
-                                        <rect key="frame" x="0.0" y="0.0" width="156" height="156"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="175.66666666666666" height="175.66666666666666"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="FQN-GF-596"/>
                                             <constraint firstAttribute="width" secondItem="ES8-4e-66f" secondAttribute="height" multiplier="1:1" id="NCr-XK-dO6"/>
                                         </constraints>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <mask key="constraints">
+                                                <exclude reference="NCr-XK-dO6"/>
+                                            </mask>
+                                        </variation>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Images Image" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xdh-Ez-2xa">
-                                        <rect key="frame" x="171" y="0.0" width="156" height="156"/>
+                                        <rect key="frame" x="190.66666666666663" y="0.0" width="175.33333333333337" height="175.66666666666666"/>
                                     </imageView>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="dwy-kU-94D">
-                                <rect key="frame" x="24" y="502" width="327" height="156"/>
+                                <rect key="frame" x="24" y="521.66666666666663" width="366" height="175"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Videos Image" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lg4-S2-ZtF">
-                                        <rect key="frame" x="0.0" y="0.0" width="156" height="156"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="175.66666666666666" height="175"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="1id-T2-WSN"/>
                                             <constraint firstAttribute="width" secondItem="lg4-S2-ZtF" secondAttribute="height" multiplier="1:1" id="NVg-5i-rUW"/>
                                         </constraints>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <mask key="constraints">
+                                                <exclude reference="NVg-5i-rUW"/>
+                                            </mask>
+                                        </variation>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Code" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yfK-Ki-u1F">
-                                        <rect key="frame" x="171" y="0.0" width="156" height="156"/>
+                                        <rect key="frame" x="190.66666666666663" y="0.0" width="175.33333333333337" height="175"/>
                                     </imageView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D7J-fk-gKN">
+                                <rect key="frame" x="186.5" y="843.5" width="395" height="63"/>
+                                <color key="backgroundColor" red="0.87325507609999997" green="0.16999913890000001" blue="0.1272439105" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="O5N-aG-00t"/>
+                                    <constraint firstAttribute="width" constant="395" id="eZ3-xb-Zgp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                <state key="normal" title="Customize Dashboard">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="D7J-fk-gKN" secondAttribute="bottom" constant="117.5" id="1oT-8v-kYk"/>
+                            <constraint firstItem="bhb-s2-pDL" firstAttribute="top" secondItem="zL9-Oo-fJu" secondAttribute="bottom" constant="50" id="3qf-VI-jFI"/>
+                            <constraint firstItem="zL9-Oo-fJu" firstAttribute="centerY" secondItem="NLx-5n-mDS" secondAttribute="centerY" constant="15" id="4kU-Dl-VhZ"/>
                             <constraint firstItem="zL9-Oo-fJu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="570-1k-oIl"/>
                             <constraint firstItem="NLx-5n-mDS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="7A8-YJ-udw"/>
+                            <constraint firstItem="YTn-Oj-gs7" firstAttribute="centerY" secondItem="NLx-5n-mDS" secondAttribute="centerY" constant="15" id="8Ub-P8-EL1"/>
+                            <constraint firstItem="D7J-fk-gKN" firstAttribute="top" secondItem="dwy-kU-94D" secondAttribute="bottom" constant="50" id="94k-FX-FdV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dwy-kU-94D" secondAttribute="trailing" constant="24" id="F4q-GO-FF2"/>
+                            <constraint firstItem="D7J-fk-gKN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J8y-m5-Paa"/>
                             <constraint firstItem="bhb-s2-pDL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="QNk-IG-qUz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zL9-Oo-fJu" secondAttribute="trailing" constant="8" id="W0C-ka-Lhr"/>
                             <constraint firstItem="dwy-kU-94D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="WWs-xc-E3G"/>
                             <constraint firstItem="yxM-TJ-Gax" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WtD-Kv-rxb"/>
                             <constraint firstItem="zL9-Oo-fJu" firstAttribute="top" secondItem="NLx-5n-mDS" secondAttribute="bottom" constant="24" id="X3O-OJ-qYS"/>
                             <constraint firstItem="yxM-TJ-Gax" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ZRL-nm-6gG"/>
+                            <constraint firstItem="dwy-kU-94D" firstAttribute="top" secondItem="bhb-s2-pDL" secondAttribute="bottom" constant="25" id="aQx-c0-6hS"/>
+                            <constraint firstItem="dwy-kU-94D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="24" id="eoY-fK-wzW"/>
                             <constraint firstItem="bhb-s2-pDL" firstAttribute="top" secondItem="zL9-Oo-fJu" secondAttribute="bottom" constant="20" id="jZx-Qv-voT"/>
                             <constraint firstItem="dwy-kU-94D" firstAttribute="top" secondItem="bhb-s2-pDL" secondAttribute="bottom" constant="15" id="mUh-mU-IF6"/>
                             <constraint firstItem="yxM-TJ-Gax" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="n2q-WL-Gt3"/>
@@ -110,6 +146,34 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bhb-s2-pDL" secondAttribute="trailing" constant="24" id="ySa-xd-NdN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="D7J-fk-gKN"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="8Ub-P8-EL1"/>
+                                <exclude reference="3qf-VI-jFI"/>
+                                <exclude reference="aQx-c0-6hS"/>
+                                <exclude reference="4kU-Dl-VhZ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="D7J-fk-gKN"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="8Ub-P8-EL1"/>
+                                <exclude reference="rEk-dE-6fU"/>
+                                <include reference="3qf-VI-jFI"/>
+                                <exclude reference="jZx-Qv-voT"/>
+                                <exclude reference="WWs-xc-E3G"/>
+                                <include reference="aQx-c0-6hS"/>
+                                <exclude reference="mUh-mU-IF6"/>
+                                <include reference="4kU-Dl-VhZ"/>
+                                <exclude reference="570-1k-oIl"/>
+                                <exclude reference="X3O-OJ-qYS"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="devslopesLogo" destination="NLx-5n-mDS" id="0U5-0e-PNO"/>
@@ -134,7 +198,7 @@
                     <viewLayoutGuide key="safeArea" id="yjB-zK-vOF"/>
                 </stackView>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="136.71875" y="133.0078125"/>
         </scene>
     </scenes>
     <resources>
